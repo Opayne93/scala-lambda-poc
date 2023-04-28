@@ -1,4 +1,0 @@
-[debug] [infrastructure-test] Classpath dependencies List(poc)
-[debug] [infrastructure-test] Dependencies from configurations List(infrastructure)
-[debug] Bloop wrote the configuration of project 'infrastructure-test' to '/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/.bloop/infrastructure-test.json'
-[success] Generated .bloop/infrastructure-test.json

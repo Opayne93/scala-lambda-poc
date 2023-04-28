@@ -1,2 +1,0 @@
-[debug] Created transactional ClassFileManager with tempDir = /Users/oliver.payne/Lifeway/poc/scala-lambda-poc/poc/target/scala-2.13/classes.bak
-[debug] Removing the temporary directory used for backing up class files: /Users/oliver.payne/Lifeway/poc/scala-lambda-poc/poc/target/scala-2.13/classes.bak

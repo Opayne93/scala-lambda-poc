@@ -102,7 +102,6 @@ lazy val poc = project
 
 val infrastructure = project
   .in(file("infrastructure"))
-  .dependsOn(poc)
   .settings(
     baseSettings,
     libraryDependencies ++= Seq(
