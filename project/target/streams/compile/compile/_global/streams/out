@@ -1,0 +1,19 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/project/src/main/scala/com/lifeway/it/poc/Handler.scala:3:11: object circe is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.circe.generic.auto._[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/project/src/main/scala/com/lifeway/it/poc/Handler.scala:4:11: object github is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.github.mkotsur.aws.handler.Lambda._[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/project/src/main/scala/com/lifeway/it/poc/Handler.scala:5:11: object github is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.github.mkotsur.aws.handler.Lambda[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/project/src/main/scala/com/lifeway/it/poc/Handler.scala:6:12: object amazonaws is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.amazonaws.services.lambda.runtime.Context[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/project/src/main/scala/com/lifeway/it/poc/Handler.scala:12:31: not found: type Lambda[0m
+[0m[[0m[31merror[0m] [0m[0mclass PingPongHandler extends Lambda[Ping, Pong] {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/oliver.payne/Lifeway/poc/scala-lambda-poc/project/src/main/scala/com/lifeway/it/poc/Handler.scala:14:44: not found: type Context[0m
+[0m[[0m[31merror[0m] [0m[0m  override def handle(ping: Ping, context: Context) = Right(Pong(ping.inputMsg.reverse))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
