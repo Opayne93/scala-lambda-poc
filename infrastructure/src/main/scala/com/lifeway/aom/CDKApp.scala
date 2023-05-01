@@ -37,11 +37,11 @@ object CDKApp {
 
     val appStack = new AppStack(
       app,
-      s"scala-poc-$env-appstack",
+      s"customer-scala-poc-$env-appstack",
       context,
       StackProps
         .builder()
-        .stackName(s"scala-poc-$env-appstack")
+        .stackName(s"customer-scala-poc-$env-appstack")
         .synthesizer(synthesizer)
         .env(context.awsEnv)
         .build(),

@@ -106,9 +106,9 @@ val infrastructure = project
     baseSettings,
     libraryDependencies ++= Seq(
       "com.lifeway.consumersolutions" %% "consumersolutions-eventsourcing-infrastructure-cdk" % Versions.eventSourcingInfrastructureCdk,
-      "software.amazon.awscdk" % "aws-cdk-lib"                     % "2.45.0",
-      "software.amazon.awscdk" % "apigatewayv2-alpha"              % "2.45.0-alpha.0",
-      "software.amazon.awscdk" % "apigatewayv2-integrations-alpha" % "2.45.0-alpha.0",
+      "software.amazon.awscdk" % "aws-cdk-lib"                     % "2.77.0",
+      "software.amazon.awscdk" % "apigatewayv2-alpha"              % "2.77.0-alpha.0",
+      "software.amazon.awscdk" % "apigatewayv2-integrations-alpha" % "2.77.0-alpha.0",
     ),
     addCommandAlias(
       "infrastructure-build",

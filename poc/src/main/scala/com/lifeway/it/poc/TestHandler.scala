@@ -15,7 +15,7 @@ case class TestRequest(input: String)
 case class TestResult(output: String, date: String)
 
 class TestHandler extends Lambda[TestRequest, TestResult] with Resource {
-
+  Core.getGlobalContext.register(this);
 
   val logger: Logger                                       = LambdaLogger(Logger.LogLevel(Util.env("LOG_LEVEL"), Logger.LogLevel.Info))
 
