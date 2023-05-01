@@ -47,4 +47,33 @@ object TestHandler extends SnapstartUtil {
     val request: TestRequest = decode[TestRequest](rawRequest).toOption.get
     Right(TestResult("test response", new Date().toInstant().toString()))
   }
+
+  def primeSeive(s: LazyList[Int], head: Int) = { 
+    val r = s filter {
+            x => {
+                if (x % head != 0) {
+                  true
+                } else {
+                  false
+                }
+            }
+    }
+    r
+  }
+  def numberStream(g: Int): LazyList[Int] = LazyList.from(g)
+      
+  def sieve_of_Eratosthenes(stream: LazyList[Int]): 
+  LazyList[Int] = stream.head #:: sieve_of_Eratosthenes(
+      primeSeive(stream.tail, stream.head))
+      
+  val no_of_primes = sieve_of_Eratosthenes(numberStream(2))
+  
+  def calculatePrimesOfN(n: Int): Either[Nothing, TestResult] = {
+    (no_of_primes take n ) foreach {
+      println(_)
+    }
+    Right(TestResult("complete", new Date().toInstant().toString()))
+  }
+
+
 }
